@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bot de Stardew Valley</title>
+	<style type="text/css"media="screen">
+		#boton
+		{
+			background:#EE0E0E;
+		}
+		.todo
+		{
+			position: relative;
+		}
+		.textos
+		{
+			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+  			font-size: 18px;
+  			font-family: "Arial Black";
+		}
+		img
+		{
+			padding: 0px;
+  			width: 1350px;
+  			height: 636.4px;
+  			opacity: 1;
+		}
+		#nombreplanta
+		{
+			opacity: 0.6;
+			font-family: "Arial Black"
+		}
+		#primero
+		{
+			opacity: 0.6;
+			font-family: "Arial Black"			
+		}
+		#segundo
+		{
+			opacity: 0.6;
+			font-family: "Arial Black"			
+		}
+		#tercero
+		{
+			opacity: 0.6;
+			font-family: "Arial Black"
+		}
+		#cuarto
+		{
+			opacity: 0.6;
+			font-family: "Arial Black"
+		}
+	</style>
+</head>
+<body>
+	<script src="Bot.js"></script>
+
+	<div class="todo">
+		<img src="fondo montañas stardew valley.png">
+		<div class="textos">
+			<h id="Primertexto">¿Qué planta vas a sembrar?</h>
+			<input type="text" id="nombreplanta" />
+			<h id="Segundotexto"><br>¿Cuánto cuesta la semilla?</h>
+			<input type="number" id="primero" />
+			<h id="Tercertexto"><br>¿A cuánto se vende la planta?</h>
+			<input type="number" id="segundo" />
+			<h id="Cuartotexto"><br>¿Cuántas plantas vas a sembrar?</h>
+			<input type="number" id="tercero" />
+			<h id="Quintotexto"><br>¿Cuántas veces se cosecha al mes?</h>
+			<input type="number" id="cuarto" />
+			<div id="botonconsaltodelinea">
+				<button id="boton" onclick="calcular()">Calcular</button>
+			</div>
+			<small id="Creditos">Desarrollado por Arusok y Diego</small>
+		</div>
+	</div>
+</body>
+</html>
